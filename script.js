@@ -363,11 +363,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 const SUPABASE_URL = "https://sspydvzfokjtatklibob.supabase.co";
-const SUPABASE_KEY = "TU_NUEVA_PUBLISHABLE_KEY";
+
+const SUPABASE_KEY = "TU_PUBLISHABLE_KEY";
 
 const supabaseClient = window.supabase.createClient(
     SUPABASE_URL,
     SUPABASE_KEY
 );
 
-console.log("🔥 VIPBET YUCA conectado a Supabase");
+async function testSupabase() {
+
+    const { data, error } = await supabaseClient
+        .from("sports")
+        .select("*");
+
+    if (error) {
+        console.error("❌ SUPABASE ERROR:", error);
+        return;
+    }
+
+    console.log("🔥 SUPABASE CONECTADO");
+    console.log(data);
+}
+
+testSupabase();
