@@ -1,13 +1,13 @@
 // ============================================
 // VIPBET YUCA
-// V2 — Navigation & UI Engine
+// V3 — Navigation + UI + Supabase Engine
 // ============================================
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    // -----------------------------
+    // ============================================
     // ELEMENTOS PRINCIPALES
-    // -----------------------------
+    // ============================================
 
     const navItems = document.querySelectorAll("[data-page]");
     const pages = document.querySelectorAll(".page");
@@ -21,9 +21,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const modal = document.querySelector(".match-modal");
     const modalClose = document.querySelector(".modal-close");
 
-    // -----------------------------
+
+    // ============================================
     // NAVEGACIÓN
-    // -----------------------------
+    // ============================================
 
     function showPage(pageName) {
 
@@ -49,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         });
 
-        // Cerrar menú móvil después de navegar
+        // Cerrar menú móvil
         if (sidebar) {
             sidebar.classList.remove("open");
         }
@@ -77,9 +78,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    // -----------------------------
+    // ============================================
     // MENÚ MOBILE
-    // -----------------------------
+    // ============================================
 
     if (menuButton && sidebar) {
 
@@ -92,9 +93,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    // -----------------------------
+    // ============================================
     // FILTROS DE PARTIDOS
-    // -----------------------------
+    // ============================================
 
     filterButtons.forEach(button => {
 
@@ -139,9 +140,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    // -----------------------------
+    // ============================================
     // CONTADOR DE PARTIDOS
-    // -----------------------------
+    // ============================================
 
     function updateMatchCounter(number) {
 
@@ -156,9 +157,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    // -----------------------------
-    // ABRIR ANÁLISIS DE PARTIDO
-    // -----------------------------
+    // ============================================
+    // ABRIR ANÁLISIS
+    // ============================================
 
     const analysisButtons =
         document.querySelectorAll("[data-open-analysis]");
@@ -188,7 +189,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (!match) return;
 
-        // Copiar información del partido
         const modalTitle =
             modal.querySelector(".modal-title");
 
@@ -212,9 +212,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    // -----------------------------
+    // ============================================
     // CERRAR MODAL
-    // -----------------------------
+    // ============================================
 
     if (modalClose) {
 
@@ -247,9 +247,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    // -----------------------------
+    // ============================================
     // ESC PARA CERRAR MODAL
-    // -----------------------------
+    // ============================================
 
     document.addEventListener("keydown", event => {
 
@@ -262,9 +262,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    // -----------------------------
+    // ============================================
     // BOTONES DE MERCADOS
-    // -----------------------------
+    // ============================================
 
     const marketButtons =
         document.querySelectorAll("[data-market]");
@@ -310,9 +310,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    // -----------------------------
+    // ============================================
     // SIMULACIÓN DE CARGA
-    // -----------------------------
+    // ============================================
 
     const loadingElements =
         document.querySelectorAll("[data-loading]");
@@ -328,9 +328,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    // -----------------------------
+    // ============================================
     // RELOJ DE ACTUALIZACIÓN
-    // -----------------------------
+    // ============================================
 
     function updateLastUpdate() {
 
@@ -355,35 +355,114 @@ document.addEventListener("DOMContentLoaded", () => {
     updateLastUpdate();
 
 
-    // -----------------------------
+    // ============================================
     // INICIO
-    // -----------------------------
+    // ============================================
 
     showPage("dashboard");
 
 });
-const SUPABASE_URL = "https://sspydvzfokjtatklibob.supabase.co";
 
-const SUPABASE_KEY = "TU_PUBLISHABLE_KEY";
 
-const supabaseClient = window.supabase.createClient(
-    SUPABASE_URL,
-    SUPABASE_KEY
-);
+// ==================================================
+// SUPABASE
+// ==================================================
+
+const SUPABASE_URL =
+    "https://sspydvzfokjtatklibob.supabase.co";
+
+
+// ⚠️ Pega aquí TU NUEVA PUBLISHABLE KEY
+// No uses una service_role / secret key.
+
+const SUPABASE_KEY =
+    sb_publishable_x3JJH5rxHFAVERrpRXd8ww_Cia-ldNq
+
+
+const supabaseClient =
+    window.supabase.createClient(
+        SUPABASE_URL,
+        SUPABASE_KEY
+    );
+
+
+// ==================================================
+// TEST DE CONEXIÓN
+// ==================================================
 
 async function testSupabase() {
 
-    const { data, error } = await supabaseClient
-        .from("sports")
-        .select("*");
+    console.log("🔄 Probando conexión con Supabase...");
+
+    const { data, error } =
+        await supabaseClient
+            .from("sports")
+            .select("*")
+            .order("id", { ascending: true });
+
 
     if (error) {
-        console.error("❌ SUPABASE ERROR:", error);
+
+        console.error(
+            "❌ SUPABASE ERROR:",
+            error
+        );
+
+        updateSystemStatus(false);
+
+        return;
+
+    }
+
+
+    console.log("🔥 SUPABASE CONECTADO");
+
+    console.table(data);
+
+    updateSystemStatus(true);
+
+}
+
+
+// ==================================================
+// ESTADO DEL SISTEMA
+// ==================================================
+
+function updateSystemStatus(connected) {
+
+    const statusDot =
+        document.querySelector("#systemStatusDot");
+
+    const statusText =
+        document.querySelector("#systemStatusText");
+
+
+    if (!statusDot || !statusText) {
         return;
     }
 
-    console.log("🔥 SUPABASE CONECTADO");
-    console.log(data);
+
+    if (connected) {
+
+        statusDot.classList.add("connected");
+
+        statusText.textContent =
+            "DATA ENGINE CONNECTED";
+
+    } else {
+
+        statusDot.classList.remove("connected");
+
+        statusText.textContent =
+            "DATA ENGINE OFFLINE";
+
+    }
+
 }
+
+
+// ==================================================
+// ARRANCAR SUPABASE
+// ==================================================
 
 testSupabase();
