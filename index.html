@@ -2,7 +2,6 @@
 <html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
 
     <meta
@@ -12,1215 +11,1060 @@
 
     <meta
         name="description"
-        content="VIPBET YUCA — Análisis deportivo basado en datos, probabilidades y valor."
+        content="VIPBET YUCA — Sports Intelligence Platform"
     >
 
-    <title>VIPBET YUCA | Sports Intelligence</title>
+    <title>VIPBET YUCA — Sports Intelligence</title>
 
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
-
+    <!-- =====================================================
+         VIPBET YUCA — MAIN STYLESHEET
+         ===================================================== -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 
 <body>
 
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
 
-<!-- =====================================================
-     HEADER
-===================================================== -->
+    <header class="header">
 
-<header class="header">
+        <div class="header-inner">
 
-    <div class="header-inner">
+            <!-- BRAND -->
 
+            <div class="brand">
 
-        <!-- BRAND -->
-
-        <a href="#" class="brand">
-
-            <div class="logo">
-                VY
-            </div>
-
-            <div>
-
-                <div class="brand-name">
-                    VIPBET <span>YUCA</span>
+                <div class="logo">
+                    VY
                 </div>
 
-                <div class="brand-subtitle">
-                    SPORTS INTELLIGENCE
+                <div>
+                    <div class="brand-name">
+                        VIPBET YUCA
+                    </div>
+
+                    <div class="brand-subtitle">
+                        SPORTS INTELLIGENCE
+                    </div>
                 </div>
 
             </div>
 
-        </a>
+
+            <!-- SPORTS NAVIGATION -->
+
+            <nav class="sports-nav">
+
+                <button class="sport-item active">
+                    ⚽ FÚTBOL
+                </button>
+
+                <button class="sport-item">
+                    🏀 NBA
+                </button>
+
+                <button class="sport-item">
+                    ⚾ MLB
+                </button>
+
+                <button class="sport-item">
+                    🏈 NFL
+                </button>
+
+            </nav>
 
 
-        <!-- SPORTS NAV -->
+            <!-- HEADER ACTIONS -->
 
-        <nav class="sports-nav">
+            <div class="header-actions">
 
-            <a
-                href="#"
-                class="sport-item active"
-            >
-                ⚽ Fútbol
-            </a>
+                <button class="header-icon">
+                    🔔
+                </button>
 
-            <a
-                href="#"
-                class="sport-item"
-            >
-                🏀 NBA
-            </a>
+                <button class="profile-button">
+                    VIP
+                </button>
 
-            <a
-                href="#"
-                class="sport-item"
-            >
-                ⚾ MLB
-            </a>
+            </div>
 
-            <a
-                href="#"
-                class="sport-item"
-            >
-                🏈 NFL
-            </a>
+        </div>
 
-        </nav>
+    </header>
 
 
-        <!-- HEADER ACTIONS -->
 
-        <div class="header-actions">
+    <!-- =====================================================
+         SIDEBAR
+         ===================================================== -->
+
+    <aside class="sidebar">
+
+
+        <!-- PLATAFORMA -->
+
+        <div class="sidebar-section">
+
+            <div class="sidebar-label">
+                PLATAFORMA
+            </div>
 
             <button
-                class="header-icon"
-                aria-label="Notificaciones"
+                class="sidebar-link active"
+                data-page="dashboard"
             >
-                🔔
+                <span class="sidebar-icon">⌂</span>
+                Inicio
             </button>
 
-            <button class="profile-button">
-                👤
-                <span>VIP</span>
+
+            <button
+                class="sidebar-link"
+                data-page="matches"
+            >
+                <span class="sidebar-icon">⚽</span>
+                Partidos
+            </button>
+
+
+            <button
+                class="sidebar-link"
+                data-page="scanner"
+            >
+                <span class="sidebar-icon">⌕</span>
+                Scanner
+            </button>
+
+
+            <button
+                class="sidebar-link"
+                data-page="value"
+            >
+                <span class="sidebar-icon">◆</span>
+                Value Finder
             </button>
 
         </div>
 
-    </div>
 
-</header>
 
+        <!-- ANALYTICS -->
 
+        <div class="sidebar-section">
 
-<!-- =====================================================
-     SIDEBAR
-===================================================== -->
-
-<aside class="sidebar">
-
-
-    <!-- MAIN -->
-
-    <div class="sidebar-section">
-
-        <div class="sidebar-label">
-            Plataforma
-        </div>
-
-
-        <a
-            href="#"
-            class="sidebar-link active"
-            data-page="dashboard"
-        >
-
-            <span class="sidebar-icon">
-                🏠
-            </span>
-
-            Inicio
-
-        </a>
-
-
-        <a
-            href="#"
-            class="sidebar-link"
-            data-page="matches"
-        >
-
-            <span class="sidebar-icon">
-                ⚽
-            </span>
-
-            Partidos
-
-        </a>
-
-
-        <a
-            href="#"
-            class="sidebar-link"
-            data-page="scanner"
-        >
-
-            <span class="sidebar-icon">
-                🔎
-            </span>
-
-            VIPBET Scanner
-
-        </a>
-
-
-        <a
-            href="#"
-            class="sidebar-link"
-            data-page="value"
-        >
-
-            <span class="sidebar-icon">
-                💎
-            </span>
-
-            Value Finder
-
-        </a>
-
-    </div>
-
-
-
-    <!-- ANALYTICS -->
-
-    <div class="sidebar-section">
-
-        <div class="sidebar-label">
-            Analytics
-        </div>
-
-
-        <a
-            href="#"
-            class="sidebar-link"
-            data-page="analysis"
-        >
-
-            <span class="sidebar-icon">
-                📊
-            </span>
-
-            Match Analysis
-
-        </a>
-
-
-        <a
-            href="#"
-            class="sidebar-link"
-            data-page="performance"
-        >
-
-            <span class="sidebar-icon">
-                📈
-            </span>
-
-            Performance
-
-        </a>
-
-    </div>
-
-
-
-    <!-- ACCOUNT -->
-
-    <div class="sidebar-section">
-
-        <div class="sidebar-label">
-            Cuenta
-        </div>
-
-
-        <a
-            href="#"
-            class="sidebar-link"
-            data-page="profile"
-        >
-
-            <span class="sidebar-icon">
-                👤
-            </span>
-
-            Perfil
-
-        </a>
-
-
-        <a
-            href="#"
-            class="sidebar-link"
-            data-page="settings"
-        >
-
-            <span class="sidebar-icon">
-                ⚙️
-            </span>
-
-            Settings
-
-        </a>
-
-    </div>
-
-
-
-    <!-- SYSTEM STATUS -->
-
-    <div class="sidebar-section">
-
-        <div class="sidebar-label">
-            Sistema
-        </div>
-
-
-        <div class="status status-demo">
-
-            <span class="status-dot"></span>
-
-            DEMO MODE
-
-        </div>
-
-    </div>
-
-</aside>
-
-
-
-<!-- =====================================================
-     MAIN
-===================================================== -->
-
-<main class="main">
-
-    <div class="main-content">
-
-
-
-        <!-- =================================================
-             DASHBOARD
-        ================================================== -->
-
-        <section
-            class="page active"
-            data-page-content="dashboard"
-        >
-
-
-            <!-- DEMO NOTICE -->
-
-            <div class="demo-notice">
-
-                <span>◆</span>
-
-                <span>
-                    DEMO MODE — Los datos mostrados son
-                    únicamente ejemplos visuales.
-                </span>
-
+            <div class="sidebar-label">
+                ANALYTICS
             </div>
 
 
+            <button
+                class="sidebar-link"
+                data-page="analysis"
+            >
+                <span class="sidebar-icon">◈</span>
+                Match Analysis
+            </button>
 
-            <!-- HERO -->
 
-            <section class="hero">
+            <button
+                class="sidebar-link"
+                data-page="performance"
+            >
+                <span class="sidebar-icon">↗</span>
+                Performance
+            </button>
+
+        </div>
 
 
-                <div class="hero-label">
-                    VIPBET YUCA
+
+        <!-- CUENTA -->
+
+        <div class="sidebar-section">
+
+            <div class="sidebar-label">
+                CUENTA
+            </div>
+
+
+            <button
+                class="sidebar-link"
+                data-page="profile"
+            >
+                <span class="sidebar-icon">●</span>
+                Perfil
+            </button>
+
+
+            <button
+                class="sidebar-link"
+                data-page="settings"
+            >
+                <span class="sidebar-icon">⚙</span>
+                Configuración
+            </button>
+
+        </div>
+
+
+
+        <!-- SISTEMA -->
+
+        <div class="sidebar-section">
+
+            <div class="sidebar-label">
+                SISTEMA
+            </div>
+
+
+            <div class="status">
+
+                <span class="status-dot"></span>
+
+                SISTEMA ACTIVO
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+         ===================================================== -->
+
+    <main class="main">
+
+        <div class="main-content">
+
+
+            <!-- =================================================
+                 DASHBOARD
+                 ================================================= -->
+
+            <section
+                class="page active"
+                data-page-content="dashboard"
+            >
+
+
+                <!-- DEMO NOTICE -->
+
+                <div class="demo-notice">
+
+                    ⚠️ MODO DEMO —
+                    Los datos mostrados actualmente son
+                    demostrativos y no representan picks reales.
+
                 </div>
 
 
-                <h1 class="hero-title">
-                    SMART BETTING
+
+                <!-- HERO -->
+
+                <div class="hero">
+
+                    <div class="hero-label">
+                        SMART BETTING ANALYSIS
+                    </div>
+
+
+                    <h1 class="hero-title">
+                        Decisiones basadas<br>
+                        en datos.
+                    </h1>
+
+
+                    <p class="hero-description">
+
+                        VIPBET YUCA combina probabilidades,
+                        estadísticas, cuotas de mercado y
+                        análisis de valor para convertir
+                        información deportiva en decisiones
+                        inteligentes.
+
+                    </p>
+
+
+                    <div class="hero-actions">
+
+                        <div class="status">
+
+                            <span class="status-dot"></span>
+
+                            MOTOR DE ANÁLISIS ACTIVO
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- KPI -->
+
+                <div class="kpi-grid">
+
+
+                    <div class="kpi-card">
+
+                        <div class="kpi-label">
+                            PARTIDOS ANALIZADOS
+                        </div>
+
+                        <div class="kpi-value">
+                            128
+                        </div>
+
+                        <div class="kpi-change">
+                            +18 esta semana
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="kpi-card">
+
+                        <div class="kpi-label">
+                            CONFIANZA PROMEDIO
+                        </div>
+
+                        <div class="kpi-value">
+                            84%
+                        </div>
+
+                        <div class="kpi-change">
+                            +4.2%
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="kpi-card">
+
+                        <div class="kpi-label">
+                            VALUE ENCONTRADO
+                        </div>
+
+                        <div class="kpi-value">
+                            +9.7%
+                        </div>
+
+                        <div class="kpi-change">
+                            Últimos análisis
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="kpi-card">
+
+                        <div class="kpi-label">
+                            MODELO
+                        </div>
+
+                        <div class="kpi-value">
+                            V1.0
+                        </div>
+
+                        <div class="kpi-change">
+                            Sistema activo
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- MATCH CENTER -->
+
+                <div class="section-header">
+
+                    <h2 class="section-title">
+                        Match Center
+                    </h2>
+
+                    <a
+                        href="#"
+                        class="section-link"
+                    >
+                        Ver todos →
+                    </a>
+
+                </div>
+
+
+
+                <!-- FILTERS -->
+
+                <div class="filter-bar">
+
+                    <button
+                        class="filter-button active"
+                        data-filter="all"
+                    >
+                        TODOS
+                    </button>
+
+
+                    <button
+                        class="filter-button"
+                        data-filter="football"
+                    >
+                        ⚽ FÚTBOL
+                    </button>
+
+
+                    <button
+                        class="filter-button"
+                        data-filter="today"
+                    >
+                        HOY
+                    </button>
+
+
+                    <button
+                        class="filter-button"
+                        data-filter="value"
+                    >
+                        ◆ VALUE
+                    </button>
+
+                </div>
+
+
+
+                <!-- MATCH CARDS -->
+
+                <div class="match-grid">
+
+
+                    <!-- MATCH 1 -->
+
+                    <article
+                        class="match-card"
+                        data-match="football"
+                    >
+
+                        <div class="match-card-header">
+
+                            <span class="league-name">
+                                PREMIER LEAGUE
+                            </span>
+
+                            <span class="match-time">
+                                3:00 PM
+                            </span>
+
+                        </div>
+
+
+                        <div class="match-body">
+
+
+                            <div class="team">
+
+                                <div class="team-info">
+
+                                    <div class="team-logo">
+                                        ARS
+                                    </div>
+
+                                    <div>
+
+                                        <div class="team-name">
+                                            Arsenal
+                                        </div>
+
+                                        <div class="team-record">
+                                            18W • 5D • 3L
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="team">
+
+                                <div class="team-info">
+
+                                    <div class="team-logo">
+                                        CHE
+                                    </div>
+
+                                    <div>
+
+                                        <div class="team-name">
+                                            Chelsea
+                                        </div>
+
+                                        <div class="team-record">
+                                            13W • 7D • 6L
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="market-grid">
+
+
+                                <div class="market">
+
+                                    <div class="market-label">
+                                        PROBABILIDAD
+                                    </div>
+
+                                    <div class="market-value gold">
+                                        68%
+                                    </div>
+
+                                </div>
+
+
+                                <div class="market">
+
+                                    <div class="market-label">
+                                        CUOTA
+                                    </div>
+
+                                    <div class="market-value">
+                                        1.70
+                                    </div>
+
+                                </div>
+
+
+                                <div class="market">
+
+                                    <div class="market-label">
+                                        VALUE
+                                    </div>
+
+                                    <div class="market-value gold">
+                                        +9.2%
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="match-footer">
+
+                            <span class="confidence">
+                                ● CONFIANZA 82%
+                            </span>
+
+                            <button
+                                class="analysis-button"
+                                data-open-analysis
+                            >
+                                ANÁLISIS →
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- MATCH 2 -->
+
+                    <article
+                        class="match-card"
+                        data-match="football"
+                    >
+
+                        <div class="match-card-header">
+
+                            <span class="league-name">
+                                LA LIGA
+                            </span>
+
+                            <span class="match-time">
+                                4:00 PM
+                            </span>
+
+                        </div>
+
+
+                        <div class="match-body">
+
+
+                            <div class="team">
+
+                                <div class="team-info">
+
+                                    <div class="team-logo">
+                                        RMA
+                                    </div>
+
+                                    <div>
+
+                                        <div class="team-name">
+                                            Real Madrid
+                                        </div>
+
+                                        <div class="team-record">
+                                            20W • 4D • 2L
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="team">
+
+                                <div class="team-info">
+
+                                    <div class="team-logo">
+                                        VAL
+                                    </div>
+
+                                    <div>
+
+                                        <div class="team-name">
+                                            Valencia
+                                        </div>
+
+                                        <div class="team-record">
+                                            10W • 6D • 10L
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="market-grid">
+
+
+                                <div class="market">
+
+                                    <div class="market-label">
+                                        PROBABILIDAD
+                                    </div>
+
+                                    <div class="market-value gold">
+                                        74%
+                                    </div>
+
+                                </div>
+
+
+                                <div class="market">
+
+                                    <div class="market-label">
+                                        CUOTA
+                                    </div>
+
+                                    <div class="market-value">
+                                        1.55
+                                    </div>
+
+                                </div>
+
+
+                                <div class="market">
+
+                                    <div class="market-label">
+                                        VALUE
+                                    </div>
+
+                                    <div class="market-value gold">
+                                        +9.5%
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="match-footer">
+
+                            <span class="confidence">
+                                ● CONFIANZA 88%
+                            </span>
+
+                            <button
+                                class="analysis-button"
+                                data-open-analysis
+                            >
+                                ANÁLISIS →
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- MATCH 3 -->
+
+                    <article
+                        class="match-card"
+                        data-match="football"
+                    >
+
+                        <div class="match-card-header">
+
+                            <span class="league-name">
+                                LIGUE 1
+                            </span>
+
+                            <span class="match-time">
+                                5:30 PM
+                            </span>
+
+                        </div>
+
+
+                        <div class="match-body">
+
+
+                            <div class="team">
+
+                                <div class="team-info">
+
+                                    <div class="team-logo">
+                                        PSG
+                                    </div>
+
+                                    <div>
+
+                                        <div class="team-name">
+                                            PSG
+                                        </div>
+
+                                        <div class="team-record">
+                                            19W • 5D • 2L
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="team">
+
+                                <div class="team-info">
+
+                                    <div class="team-logo">
+                                        LYO
+                                    </div>
+
+                                    <div>
+
+                                        <div class="team-name">
+                                            Lyon
+                                        </div>
+
+                                        <div class="team-record">
+                                            12W • 5D • 9L
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="market-grid">
+
+
+                                <div class="market">
+
+                                    <div class="market-label">
+                                        PROBABILIDAD
+                                    </div>
+
+                                    <div class="market-value gold">
+                                        71%
+                                    </div>
+
+                                </div>
+
+
+                                <div class="market">
+
+                                    <div class="market-label">
+                                        CUOTA
+                                    </div>
+
+                                    <div class="market-value">
+                                        1.65
+                                    </div>
+
+                                </div>
+
+
+                                <div class="market">
+
+                                    <div class="market-label">
+                                        VALUE
+                                    </div>
+
+                                    <div class="market-value gold">
+                                        +10.4%
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="match-footer">
+
+                            <span class="confidence">
+                                ● CONFIANZA 79%
+                            </span>
+
+                            <button
+                                class="analysis-button"
+                                data-open-analysis
+                            >
+                                ANÁLISIS →
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+
+                <!-- FOOTER -->
+
+                <footer class="footer">
+
+                    VIPBET YUCA © 2026
                     <br>
-                    ANALYSIS
-                </h1>
+                    SPORTS INTELLIGENCE PLATFORM
+                    <br><br>
+                    MODO DEMO — DATOS FICTICIOS
 
-
-                <p class="hero-description">
-
-                    Decisiones basadas en datos.
-
-                    Analizamos estadísticas,
-                    probabilidades y cuotas para
-                    identificar oportunidades con
-                    potencial de valor.
-
-                </p>
-
-
-                <div class="hero-actions">
-
-                    <button class="btn btn-gold">
-                        Ver oportunidades
-                    </button>
-
-                    <button class="btn">
-                        Explorar partidos
-                    </button>
-
-                </div>
-
+                </footer>
 
             </section>
 
 
 
-            <!-- KPI -->
+            <!-- =================================================
+                 MATCHES PAGE
+                 ================================================= -->
 
-            <div class="kpi-grid">
+            <section
+                class="page"
+                data-page-content="matches"
+            >
 
+                <div class="page-header">
 
-                <div class="kpi-card">
+                    <div>
 
-                    <div class="kpi-label">
-                        Picks analizados
-                    </div>
+                        <h1 class="page-title">
+                            Partidos
+                        </h1>
 
-                    <div class="kpi-value">
-                        12
-                    </div>
+                        <p class="page-description">
+                            Todos los eventos deportivos disponibles
+                            para análisis.
+                        </p>
 
-                    <div class="kpi-change">
-                        +4 hoy
                     </div>
 
                 </div>
 
 
-                <div class="kpi-card">
+                <div class="match-grid">
 
-                    <div class="kpi-label">
-                        Value disponible
-                    </div>
+                    <article class="match-card">
 
-                    <div class="kpi-value">
-                        +9.5%
-                    </div>
+                        <div class="match-card-header">
 
-                    <div class="kpi-change">
-                        Oportunidad detectada
-                    </div>
+                            <span class="league-name">
+                                PREMIER LEAGUE
+                            </span>
 
-                </div>
+                            <span class="match-time">
+                                HOY
+                            </span>
 
+                        </div>
 
-                <div class="kpi-card">
+                        <div class="match-body">
 
-                    <div class="kpi-label">
-                        Confianza promedio
-                    </div>
+                            <div class="team">
 
-                    <div class="kpi-value">
-                        84%
-                    </div>
+                                <div class="team-info">
 
-                    <div class="kpi-change">
-                        Sistema demo
-                    </div>
-
-                </div>
-
-
-                <div class="kpi-card">
-
-                    <div class="kpi-label">
-                        Partidos
-                    </div>
-
-                    <div class="kpi-value">
-                        24
-                    </div>
-
-                    <div class="kpi-change">
-                        En análisis
-                    </div>
-
-                </div>
-
-
-            </div>
-
-
-
-            <!-- MATCH CENTER -->
-
-            <div class="section-header">
-
-                <div>
-
-                    <div class="section-title">
-                        MATCH CENTER
-                    </div>
-
-                </div>
-
-                <a
-                    href="#"
-                    class="section-link"
-                >
-                    Ver todos →
-                </a>
-
-            </div>
-
-
-
-            <!-- FILTERS -->
-
-            <div class="filter-bar">
-
-                <button
-                    class="filter-button active"
-                    data-filter="all"
-                >
-                    Todos
-                </button>
-
-                <button
-                    class="filter-button"
-                    data-filter="football"
-                >
-                    ⚽ Fútbol
-                </button>
-
-                <button
-                    class="filter-button"
-                    data-filter="today"
-                >
-                    📅 Hoy
-                </button>
-
-                <button
-                    class="filter-button"
-                    data-filter="value"
-                >
-                    💎 Value
-                </button>
-
-            </div>
-
-
-
-            <!-- MATCH GRID -->
-
-            <div class="match-grid">
-
-
-
-                <!-- MATCH 1 -->
-
-                <article
-                    class="match-card"
-                    data-match="football today value"
-                    data-match-id="arsenal-chelsea"
-                    data-title="Arsenal vs Chelsea"
-                    data-subtitle="Premier League • DEMO"
-                >
-
-
-                    <div class="match-card-header">
-
-                        <span class="league-name">
-                            🇬🇧 PREMIER LEAGUE
-                        </span>
-
-                        <span class="match-time">
-                            3:00 PM
-                        </span>
-
-                    </div>
-
-
-                    <div class="match-body">
-
-
-                        <div class="team">
-
-                            <div class="team-info">
-
-                                <div class="team-logo">
-                                    A
-                                </div>
-
-                                <div>
+                                    <div class="team-logo">
+                                        ARS
+                                    </div>
 
                                     <div class="team-name">
                                         Arsenal
                                     </div>
 
-                                    <div class="team-record">
-                                        Local
-                                    </div>
-
                                 </div>
 
                             </div>
 
-                        </div>
 
+                            <div class="team">
 
+                                <div class="team-info">
 
-                        <div class="team">
-
-                            <div class="team-info">
-
-                                <div class="team-logo">
-                                    C
-                                </div>
-
-                                <div>
+                                    <div class="team-logo">
+                                        CHE
+                                    </div>
 
                                     <div class="team-name">
                                         Chelsea
                                     </div>
 
-                                    <div class="team-record">
-                                        Visitante
-                                    </div>
-
                                 </div>
 
                             </div>
 
                         </div>
 
+                    </article>
 
 
-                        <div class="market-grid">
+                    <article class="match-card">
 
-                            <div class="market">
+                        <div class="match-card-header">
 
-                                <span class="market-label">
-                                    Probabilidad
-                                </span>
+                            <span class="league-name">
+                                LA LIGA
+                            </span>
 
-                                <span class="market-value">
-                                    68%
-                                </span>
-
-                            </div>
-
-
-                            <div class="market">
-
-                                <span class="market-label">
-                                    Cuota
-                                </span>
-
-                                <span class="market-value gold">
-                                    1.70
-                                </span>
-
-                            </div>
-
-
-                            <div class="market">
-
-                                <span class="market-label">
-                                    Implícita
-                                </span>
-
-                                <span class="market-value">
-                                    58.8%
-                                </span>
-
-                            </div>
-
-                        </div>
-
-
-
-                        <div style="margin-top: 12px;">
-
-                            <span class="value-badge">
-                                +9.2% VALUE
+                            <span class="match-time">
+                                HOY
                             </span>
 
                         </div>
 
+                        <div class="match-body">
 
-                    </div>
+                            <div class="team">
 
+                                <div class="team-info">
 
-
-                    <div class="match-footer">
-
-                        <div class="confidence">
-
-                            Confianza
-
-                            <strong>
-                                82%
-                            </strong>
-
-                        </div>
-
-
-                        <button
-                            class="analysis-button"
-                            data-open-analysis="arsenal-chelsea"
-                        >
-                            Ver análisis →
-                        </button>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- MATCH 2 -->
-
-                <article
-                    class="match-card"
-                    data-match="football today value"
-                    data-match-id="real-valencia"
-                    data-title="Real Madrid vs Valencia"
-                    data-subtitle="La Liga • DEMO"
-                >
-
-
-                    <div class="match-card-header">
-
-                        <span class="league-name">
-                            🇪🇸 LA LIGA
-                        </span>
-
-                        <span class="match-time">
-                            4:00 PM
-                        </span>
-
-                    </div>
-
-
-                    <div class="match-body">
-
-
-                        <div class="team">
-
-                            <div class="team-info">
-
-                                <div class="team-logo">
-                                    R
-                                </div>
-
-                                <div>
+                                    <div class="team-logo">
+                                        RMA
+                                    </div>
 
                                     <div class="team-name">
                                         Real Madrid
                                     </div>
 
-                                    <div class="team-record">
-                                        Local
-                                    </div>
-
                                 </div>
 
                             </div>
 
-                        </div>
 
+                            <div class="team">
 
-                        <div class="team">
+                                <div class="team-info">
 
-                            <div class="team-info">
-
-                                <div class="team-logo">
-                                    V
-                                </div>
-
-                                <div>
+                                    <div class="team-logo">
+                                        VAL
+                                    </div>
 
                                     <div class="team-name">
                                         Valencia
                                     </div>
 
-                                    <div class="team-record">
-                                        Visitante
-                                    </div>
-
                                 </div>
 
                             </div>
 
                         </div>
 
-
-                        <div class="market-grid">
-
-                            <div class="market">
-
-                                <span class="market-label">
-                                    Probabilidad
-                                </span>
-
-                                <span class="market-value">
-                                    74%
-                                </span>
-
-                            </div>
-
-
-                            <div class="market">
-
-                                <span class="market-label">
-                                    Cuota
-                                </span>
-
-                                <span class="market-value gold">
-                                    1.55
-                                </span>
-
-                            </div>
-
-
-                            <div class="market">
-
-                                <span class="market-label">
-                                    Implícita
-                                </span>
-
-                                <span class="market-value">
-                                    64.5%
-                                </span>
-
-                            </div>
-
-                        </div>
-
-
-                        <div style="margin-top: 12px;">
-
-                            <span class="value-badge">
-                                +9.5% VALUE
-                            </span>
-
-                        </div>
-
-
-                    </div>
-
-
-                    <div class="match-footer">
-
-                        <div class="confidence">
-
-                            Confianza
-
-                            <strong>
-                                88%
-                            </strong>
-
-                        </div>
-
-
-                        <button
-                            class="analysis-button"
-                            data-open-analysis="real-valencia"
-                        >
-                            Ver análisis →
-                        </button>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- MATCH 3 -->
-
-                <article
-                    class="match-card"
-                    data-match="football today value"
-                    data-match-id="psg-lyon"
-                    data-title="PSG vs Lyon"
-                    data-subtitle="Ligue 1 • DEMO"
-                >
-
-
-                    <div class="match-card-header">
-
-                        <span class="league-name">
-                            🇫🇷 LIGUE 1
-                        </span>
-
-                        <span class="match-time">
-                            5:30 PM
-                        </span>
-
-                    </div>
-
-
-                    <div class="match-body">
-
-
-                        <div class="team">
-
-                            <div class="team-info">
-
-                                <div class="team-logo">
-                                    P
-                                </div>
-
-                                <div>
-
-                                    <div class="team-name">
-                                        PSG
-                                    </div>
-
-                                    <div class="team-record">
-                                        Local
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="team">
-
-                            <div class="team-info">
-
-                                <div class="team-logo">
-                                    L
-                                </div>
-
-                                <div>
-
-                                    <div class="team-name">
-                                        Lyon
-                                    </div>
-
-                                    <div class="team-record">
-                                        Visitante
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="market-grid">
-
-                            <div class="market">
-
-                                <span class="market-label">
-                                    Probabilidad
-                                </span>
-
-                                <span class="market-value">
-                                    71%
-                                </span>
-
-                            </div>
-
-
-                            <div class="market">
-
-                                <span class="market-label">
-                                    Cuota
-                                </span>
-
-                                <span class="market-value gold">
-                                    1.65
-                                </span>
-
-                            </div>
-
-
-                            <div class="market">
-
-                                <span class="market-label">
-                                    Implícita
-                                </span>
-
-                                <span class="market-value">
-                                    60.6%
-                                </span>
-
-                            </div>
-
-                        </div>
-
-
-                        <div style="margin-top: 12px;">
-
-                            <span class="value-badge">
-                                +10.4% VALUE
-                            </span>
-
-                        </div>
-
-
-                    </div>
-
-
-                    <div class="match-footer">
-
-                        <div class="confidence">
-
-                            Confianza
-
-                            <strong>
-                                79%
-                            </strong>
-
-                        </div>
-
-
-                        <button
-                            class="analysis-button"
-                            data-open-analysis="psg-lyon"
-                        >
-                            Ver análisis →
-                        </button>
-
-                    </div>
-
-                </article>
-
-
-            </div>
-
-
-
-            <!-- FOOTER -->
-
-            <footer class="footer">
-
-                VIPBET YUCA © 2026
-
-                <br><br>
-
-                Sports Intelligence Platform
-
-            </footer>
-
-
-        </section>
-
-
-
-        <!-- =================================================
-             MATCHES
-        ================================================== -->
-
-        <section
-            class="page"
-            data-page-content="matches"
-        >
-
-            <div class="page-header">
-
-                <div>
-
-                    <h1 class="page-title">
-                        Partidos
-                    </h1>
-
-                    <p class="page-description">
-                        Centro de eventos deportivos.
-                    </p>
+                    </article>
 
                 </div>
 
-            </div>
+            </section>
 
 
-            <div class="demo-notice">
 
-                ◆ DEMO MODE — Próximamente conectaremos
-                datos reales de partidos.
+            <!-- =================================================
+                 SCANNER
+                 ================================================= -->
 
-            </div>
+            <section
+                class="page"
+                data-page-content="scanner"
+            >
 
+                <div class="page-header">
 
-            <div class="match-grid">
+                    <div>
 
-                <article class="match-card">
+                        <h1 class="page-title">
+                            Scanner
+                        </h1>
 
-                    <div class="match-card-header">
-
-                        <span class="league-name">
-                            🇬🇧 PREMIER LEAGUE
-                        </span>
-
-                        <span class="match-time">
-                            3:00 PM
-                        </span>
-
-                    </div>
-
-                    <div class="match-body">
-
-                        <div class="team">
-
-                            <div class="team-info">
-
-                                <div class="team-logo">
-                                    A
-                                </div>
-
-                                <div class="team-name">
-                                    Arsenal
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="team">
-
-                            <div class="team-info">
-
-                                <div class="team-logo">
-                                    C
-                                </div>
-
-                                <div class="team-name">
-                                    Chelsea
-                                </div>
-
-                            </div>
-
-                        </div>
+                        <p class="page-description">
+                            Encuentra automáticamente oportunidades
+                            con diferencia entre probabilidad y mercado.
+                        </p>
 
                     </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =================================================
-             SCANNER
-        ================================================== -->
-
-        <section
-            class="page"
-            data-page-content="scanner"
-        >
-
-            <div class="page-header">
-
-                <div>
-
-                    <h1 class="page-title">
-                        VIPBET Scanner
-                    </h1>
-
-                    <p class="page-description">
-                        Encuentra oportunidades según
-                        tus criterios.
-                    </p>
 
                 </div>
 
-            </div>
 
+                <div class="analysis-card">
 
-            <div class="scanner-layout">
-
-
-                <aside class="scanner-filters">
-
-                    <div class="filter-title">
-                        Filtros
+                    <div class="analysis-card-title">
+                        VALUE SCANNER
                     </div>
 
-
-                    <div class="filter-group">
-
-                        <label>
-                            Deporte
-                        </label>
-
-                        <select class="filter-select">
-
-                            <option>
-                                Fútbol
-                            </option>
-
-                            <option>
-                                NBA
-                            </option>
-
-                            <option>
-                                MLB
-                            </option>
-
-                        </select>
-
-                    </div>
-
-
-                    <div class="filter-group">
-
-                        <label>
-                            Value mínimo
-                        </label>
-
-                        <input
-                            class="filter-input"
-                            type="text"
-                            placeholder="+5%"
-                        >
-
-                    </div>
-
-
-                    <div class="filter-group">
-
-                        <label>
-                            Confianza mínima
-                        </label>
-
-                        <input
-                            class="filter-input"
-                            type="text"
-                            placeholder="70%"
-                        >
-
-                    </div>
-
-
-                    <button class="btn btn-gold">
-                        Escanear
-                    </button>
-
-                </aside>
-
-
-
-                <div>
 
                     <table class="scanner-table">
 
@@ -1241,10 +1085,6 @@
                                 </th>
 
                                 <th>
-                                    Implícita
-                                </th>
-
-                                <th>
                                     Value
                                 </th>
 
@@ -1262,8 +1102,7 @@
                             <tr>
 
                                 <td class="table-team">
-                                    Arsenal
-                                    vs Chelsea
+                                    Arsenal vs Chelsea
                                 </td>
 
                                 <td>
@@ -1272,10 +1111,6 @@
 
                                 <td>
                                     1.70
-                                </td>
-
-                                <td>
-                                    58.8%
                                 </td>
 
                                 <td>
@@ -1294,8 +1129,7 @@
                             <tr>
 
                                 <td class="table-team">
-                                    Real Madrid
-                                    vs Valencia
+                                    Real Madrid vs Valencia
                                 </td>
 
                                 <td>
@@ -1304,10 +1138,6 @@
 
                                 <td>
                                     1.55
-                                </td>
-
-                                <td>
-                                    64.5%
                                 </td>
 
                                 <td>
@@ -1322,604 +1152,590 @@
 
                             </tr>
 
-
-                            <tr>
-
-                                <td class="table-team">
-                                    PSG
-                                    vs Lyon
-                                </td>
-
-                                <td>
-                                    71%
-                                </td>
-
-                                <td>
-                                    1.65
-                                </td>
-
-                                <td>
-                                    60.6%
-                                </td>
-
-                                <td>
-                                    <span class="value-badge">
-                                        +10.4%
-                                    </span>
-                                </td>
-
-                                <td>
-                                    79%
-                                </td>
-
-                            </tr>
-
                         </tbody>
 
                     </table>
 
                 </div>
 
-            </div>
-
-        </section>
+            </section>
 
 
 
-        <!-- =================================================
-             VALUE FINDER
-        ================================================== -->
+            <!-- =================================================
+                 VALUE FINDER
+                 ================================================= -->
 
-        <section
-            class="page"
-            data-page-content="value"
-        >
+            <section
+                class="page"
+                data-page-content="value"
+            >
 
-            <div class="page-header">
+                <div class="page-header">
 
-                <div>
+                    <div>
 
-                    <h1 class="page-title">
-                        Value Finder
-                    </h1>
+                        <h1 class="page-title">
+                            Value Finder
+                        </h1>
 
-                    <p class="page-description">
-                        Oportunidades ordenadas por
-                        diferencia entre probabilidad
-                        y mercado.
+                        <p class="page-description">
+                            Identificación de oportunidades donde
+                            nuestro modelo estima una probabilidad
+                            superior a la implícita en la cuota.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="performance-grid">
+
+                    <div class="performance-card">
+
+                        <div class="kpi-label">
+                            VALUE PROMEDIO
+                        </div>
+
+                        <div class="performance-value">
+                            +9.7%
+                        </div>
+
+                    </div>
+
+
+                    <div class="performance-card">
+
+                        <div class="kpi-label">
+                            OPORTUNIDADES
+                        </div>
+
+                        <div class="performance-value">
+                            24
+                        </div>
+
+                    </div>
+
+
+                    <div class="performance-card">
+
+                        <div class="kpi-label">
+                            MAYOR VALUE
+                        </div>
+
+                        <div class="performance-value">
+                            +14.8%
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 MATCH ANALYSIS
+                 ================================================= -->
+
+            <section
+                class="page"
+                data-page-content="analysis"
+            >
+
+                <div class="page-header">
+
+                    <div>
+
+                        <h1 class="page-title">
+                            Match Analysis
+                        </h1>
+
+                        <p class="page-description">
+                            Análisis profundo de un encuentro.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="analysis-header">
+
+                    <div class="analysis-league">
+                        PREMIER LEAGUE
+                    </div>
+
+
+                    <div class="analysis-teams">
+
+                        <div class="analysis-team">
+                            Arsenal
+                        </div>
+
+                        <div class="analysis-vs">
+                            VS
+                        </div>
+
+                        <div class="analysis-team">
+                            Chelsea
+                        </div>
+
+                    </div>
+
+
+                    <div class="analysis-date">
+                        Datos demostrativos
+                    </div>
+
+                </div>
+
+
+
+                <div class="analysis-grid">
+
+
+                    <div class="analysis-card">
+
+                        <div class="analysis-card-title">
+                            PROBABILIDADES
+                        </div>
+
+
+                        <div class="probability-grid">
+
+                            <div class="probability">
+
+                                <div class="probability-label">
+                                    ARSENAL
+                                </div>
+
+                                <div class="probability-number gold">
+                                    68%
+                                </div>
+
+                            </div>
+
+
+                            <div class="probability">
+
+                                <div class="probability-label">
+                                    EMPATE
+                                </div>
+
+                                <div class="probability-number">
+                                    18%
+                                </div>
+
+                            </div>
+
+
+                            <div class="probability">
+
+                                <div class="probability-label">
+                                    CHELSEA
+                                </div>
+
+                                <div class="probability-number">
+                                    14%
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="analysis-card">
+
+                        <div class="analysis-card-title">
+                            FORMA RECIENTE
+                        </div>
+
+
+                        <div class="form-list">
+
+
+                            <div class="form-row">
+
+                                <span class="form-team">
+                                    Arsenal
+                                </span>
+
+                                <div class="form-results">
+
+                                    <span class="form-result win">
+                                        W
+                                    </span>
+
+                                    <span class="form-result win">
+                                        W
+                                    </span>
+
+                                    <span class="form-result win">
+                                        W
+                                    </span>
+
+                                    <span class="form-result">
+                                        D
+                                    </span>
+
+                                    <span class="form-result win">
+                                        W
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-row">
+
+                                <span class="form-team">
+                                    Chelsea
+                                </span>
+
+                                <div class="form-results">
+
+                                    <span class="form-result win">
+                                        W
+                                    </span>
+
+                                    <span class="form-result">
+                                        D
+                                    </span>
+
+                                    <span class="form-result loss">
+                                        L
+                                    </span>
+
+                                    <span class="form-result win">
+                                        W
+                                    </span>
+
+                                    <span class="form-result">
+                                        D
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="analysis-card">
+
+                        <div class="analysis-card-title">
+                            MARKET
+                        </div>
+
+
+                        <div class="probability-grid">
+
+                            <div class="probability">
+
+                                <div class="probability-label">
+                                    CUOTA
+                                </div>
+
+                                <div class="probability-number">
+                                    1.70
+                                </div>
+
+                            </div>
+
+
+                            <div class="probability">
+
+                                <div class="probability-label">
+                                    IMPLÍCITA
+                                </div>
+
+                                <div class="probability-number">
+                                    58.8%
+                                </div>
+
+                            </div>
+
+
+                            <div class="probability">
+
+                                <div class="probability-label">
+                                    VALUE
+                                </div>
+
+                                <div class="probability-number gold">
+                                    +9.2%
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 PERFORMANCE
+                 ================================================= -->
+
+            <section
+                class="page"
+                data-page-content="performance"
+            >
+
+                <div class="page-header">
+
+                    <div>
+
+                        <h1 class="page-title">
+                            Performance
+                        </h1>
+
+                        <p class="page-description">
+                            Rendimiento histórico del sistema.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="performance-grid">
+
+
+                    <div class="performance-card">
+
+                        <div class="kpi-label">
+                            PRECISIÓN
+                        </div>
+
+                        <div class="performance-value">
+                            82.4%
+                        </div>
+
+                    </div>
+
+
+                    <div class="performance-card">
+
+                        <div class="kpi-label">
+                            ROI
+                        </div>
+
+                        <div class="performance-value">
+                            +11.8%
+                        </div>
+
+                    </div>
+
+
+                    <div class="performance-card">
+
+                        <div class="kpi-label">
+                            ANÁLISIS
+                        </div>
+
+                        <div class="performance-value">
+                            1,284
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 PROFILE
+                 ================================================= -->
+
+            <section
+                class="page"
+                data-page-content="profile"
+            >
+
+                <div class="page-header">
+
+                    <div>
+
+                        <h1 class="page-title">
+                            Perfil
+                        </h1>
+
+                        <p class="page-description">
+                            Configuración de tu cuenta VIPBET YUCA.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="analysis-card">
+
+                    <div class="analysis-card-title">
+                        VIPBET MEMBER
+                    </div>
+
+                    <p>
+                        Cuenta de demostración.
                     </p>
 
                 </div>
 
-            </div>
+            </section>
 
 
-            <div class="kpi-grid">
 
-                <div class="kpi-card">
+            <!-- =================================================
+                 SETTINGS
+                 ================================================= -->
 
-                    <div class="kpi-label">
-                        Mejor Value
-                    </div>
+            <section
+                class="page"
+                data-page-content="settings"
+            >
 
-                    <div class="kpi-value">
-                        +10.4%
-                    </div>
+                <div class="page-header">
 
-                    <div class="kpi-change">
-                        PSG
-                    </div>
+                    <div>
 
-                </div>
+                        <h1 class="page-title">
+                            Configuración
+                        </h1>
 
+                        <p class="page-description">
+                            Preferencias de la plataforma.
+                        </p>
 
-                <div class="kpi-card">
-
-                    <div class="kpi-label">
-                        Oportunidades
-                    </div>
-
-                    <div class="kpi-value">
-                        3
-                    </div>
-
-                    <div class="kpi-change">
-                        Demo
                     </div>
 
                 </div>
 
-            </div>
 
-        </section>
+                <div class="analysis-card">
 
+                    <div class="analysis-card-title">
+                        SISTEMA
+                    </div>
 
-
-        <!-- =================================================
-             MATCH ANALYSIS
-        ================================================== -->
-
-        <section
-            class="page"
-            data-page-content="analysis"
-        >
-
-            <div class="page-header">
-
-                <div>
-
-                    <h1 class="page-title">
-                        Match Analysis
-                    </h1>
-
-                    <p class="page-description">
-                        Análisis profundo de un partido.
+                    <p>
+                        Motor de análisis: V1.0
                     </p>
 
                 </div>
 
+            </section>
+
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         MATCH ANALYSIS MODAL
+         ===================================================== -->
+
+    <div
+        class="match-modal"
+        id="matchModal"
+    >
+
+        <div class="modal-content">
+
+            <button
+                class="modal-close"
+                id="modalClose"
+            >
+                ×
+            </button>
+
+
+            <div class="modal-title">
+                Match Analysis
             </div>
 
 
-            <div class="analysis-header">
-
-                <div class="analysis-league">
-                    🇬🇧 Premier League • DEMO
-                </div>
-
-
-                <div class="analysis-teams">
-
-                    <div class="analysis-team">
-                        Arsenal
-                    </div>
-
-                    <div class="analysis-vs">
-                        VS
-                    </div>
-
-                    <div class="analysis-team">
-                        Chelsea
-                    </div>
-
-                </div>
-
-
-                <div class="analysis-date">
-                    Hoy • 3:00 PM
-                </div>
-
+            <div class="modal-subtitle">
+                Análisis detallado del encuentro
             </div>
 
+
+            <br>
 
 
             <div class="analysis-grid">
 
-
                 <div class="analysis-card">
 
                     <div class="analysis-card-title">
-                        Probabilidades
+                        PROBABILIDAD
                     </div>
 
-
-                    <div class="probability-grid">
-
-
-                        <div class="probability">
-
-                            <div class="probability-label">
-                                Arsenal
-                            </div>
-
-                            <div class="probability-number gold">
-                                68%
-                            </div>
-
-                        </div>
-
-
-                        <div class="probability">
-
-                            <div class="probability-label">
-                                Empate
-                            </div>
-
-                            <div class="probability-number">
-                                18%
-                            </div>
-
-                        </div>
-
-
-                        <div class="probability">
-
-                            <div class="probability-label">
-                                Chelsea
-                            </div>
-
-                            <div class="probability-number">
-                                14%
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="analysis-card">
-
-                    <div class="analysis-card-title">
-                        Value
-                    </div>
-
-                    <div class="kpi-value">
-                        +9.2%
-                    </div>
-
-                    <div class="kpi-change">
-                        DEMO
-                    </div>
-
-                </div>
-
-
-                <div class="analysis-card">
-
-                    <div class="analysis-card-title">
-                        Forma reciente
-                    </div>
-
-
-                    <div class="form-list">
-
-
-                        <div class="form-row">
-
-                            <span class="form-team">
-                                Arsenal
-                            </span>
-
-                            <div class="form-results">
-
-                                <span class="form-result win">
-                                    W
-                                </span>
-
-                                <span class="form-result win">
-                                    W
-                                </span>
-
-                                <span class="form-result">
-                                    D
-                                </span>
-
-                                <span class="form-result win">
-                                    W
-                                </span>
-
-                                <span class="form-result loss">
-                                    L
-                                </span>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="form-row">
-
-                            <span class="form-team">
-                                Chelsea
-                            </span>
-
-                            <div class="form-results">
-
-                                <span class="form-result">
-                                    D
-                                </span>
-
-                                <span class="form-result loss">
-                                    L
-                                </span>
-
-                                <span class="form-result win">
-                                    W
-                                </span>
-
-                                <span class="form-result">
-                                    D
-                                </span>
-
-                                <span class="form-result loss">
-                                    L
-                                </span>
-
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
-                </div>
-
-
-                <div class="analysis-card">
-
-                    <div class="analysis-card-title">
-                        Confianza del sistema
-                    </div>
-
-                    <div class="kpi-value">
-                        82%
-                    </div>
-
-                    <div class="kpi-change">
-                        DEMO
-                    </div>
-
-                </div>
-
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =================================================
-             PERFORMANCE
-        ================================================== -->
-
-        <section
-            class="page"
-            data-page-content="performance"
-        >
-
-            <div class="page-header">
-
-                <div>
-
-                    <h1 class="page-title">
-                        Performance
-                    </h1>
-
-                    <p class="page-description">
-                        Histórico y rendimiento
-                        del sistema.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="performance-grid">
-
-
-                <div class="performance-card">
-
-                    <div class="kpi-label">
-                        Win Rate
-                    </div>
-
-                    <div class="performance-value">
+                    <div class="probability-number gold">
                         68%
                     </div>
 
                 </div>
 
 
-                <div class="performance-card">
+                <div class="analysis-card">
 
-                    <div class="kpi-label">
-                        ROI
+                    <div class="analysis-card-title">
+                        CUOTA
                     </div>
 
-                    <div class="performance-value">
-                        +7.4%
-                    </div>
-
-                </div>
-
-
-                <div class="performance-card">
-
-                    <div class="kpi-label">
-                        Picks
-                    </div>
-
-                    <div class="performance-value">
-                        124
+                    <div class="probability-number">
+                        1.70
                     </div>
 
                 </div>
 
 
-                <div class="performance-card">
+                <div class="analysis-card">
 
-                    <div class="kpi-label">
-                        Confianza
+                    <div class="analysis-card-title">
+                        VALUE
                     </div>
 
-                    <div class="performance-value">
-                        81%
+                    <div class="probability-number gold">
+                        +9.2%
                     </div>
 
                 </div>
 
-
             </div>
-
-
-            <div class="chart-container">
-
-                PERFORMANCE CHART — PRÓXIMAMENTE
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =================================================
-             PROFILE
-        ================================================== -->
-
-        <section
-            class="page"
-            data-page-content="profile"
-        >
-
-            <div class="page-header">
-
-                <div>
-
-                    <h1 class="page-title">
-                        Perfil
-                    </h1>
-
-                    <p class="page-description">
-                        Configuración de usuario.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="analysis-card">
-
-                <div class="analysis-card-title">
-                    VIPBET YUCA
-                </div>
-
-                <p class="page-description">
-                    Área de usuario próximamente.
-                </p>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =================================================
-             SETTINGS
-        ================================================== -->
-
-        <section
-            class="page"
-            data-page-content="settings"
-        >
-
-            <div class="page-header">
-
-                <div>
-
-                    <h1 class="page-title">
-                        Settings
-                    </h1>
-
-                    <p class="page-description">
-                        Configuración de la plataforma.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="analysis-card">
-
-                <div class="analysis-card-title">
-                    Sistema
-                </div>
-
-                <p class="page-description">
-                    Las preferencias y configuraciones
-                    estarán disponibles próximamente.
-                </p>
-
-            </div>
-
-        </section>
-
-
-
-    </div>
-
-</main>
-
-
-
-<!-- =====================================================
-     MATCH ANALYSIS MODAL
-===================================================== -->
-
-<div class="match-modal">
-
-    <div class="modal-content">
-
-        <button
-            class="modal-close"
-            aria-label="Cerrar"
-        >
-            ×
-        </button>
-
-
-        <div class="modal-title">
-            Match Analysis
-        </div>
-
-
-        <div class="modal-subtitle">
-            Análisis VIPBET YUCA
-        </div>
-
-
-        <div
-            style="
-                margin-top:25px;
-                padding:20px;
-                background:#101316;
-                border:1px solid #272c31;
-                border-radius:10px;
-            "
-        >
-
-            <div class="analysis-card-title">
-                Sistema de análisis
-            </div>
-
-            <p class="page-description">
-
-                Aquí aparecerá posteriormente
-                el análisis completo generado por
-                el motor de VIPBET YUCA.
-
-            </p>
 
         </div>
 
     </div>
 
-</div>
 
 
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
 
-<!-- =====================================================
-     JAVASCRIPT
-===================================================== -->
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 
 </body>
 
