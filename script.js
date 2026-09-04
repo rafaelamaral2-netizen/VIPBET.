@@ -362,3 +362,12 @@ document.addEventListener("DOMContentLoaded", () => {
     showPage("dashboard");
 
 });
+const SUPABASE_URL = "https://sspydvzfokjtatklibob.supabase.co";
+const SUPABASE_KEY = "TU_NUEVA_PUBLISHABLE_KEY";
+
+const supabaseClient = window.supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_KEY
+);
+
+console.log("🔥 VIPBET YUCA conectado a Supabase");
